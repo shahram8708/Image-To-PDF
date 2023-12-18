@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image To PDF Converter</title>
+    <style>
+        body{
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 3px solid red;
+            background-color: aqua;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .h{
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: cursive;
+        }
+        .h1{
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: cursive;
+        }
+        .inputs{
+            font-size: large;
+            width: 120px;
+            border: 3px solid black;
+            margin: 20px 20px;
+        }
+        input{
+            font-weight: bolder;
+            margin: 20px 0;
+        }
+        .input{
+             background-color: blue;
+             color: white;
+             margin: 20px 0;
+             font-size: x-large;
+             font-weight: bolder;
+             padding: 10px 30px;
+             text-transform: uppercase;
+             border: 3px solid black;
+             border-radius: 50px;
+        }
+        .input:hover{
+            background-color: blueviolet;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="h">Multiple Image To PDF Converter</div>
+        <hr>
+        <div class="h1">Only Accepted This Extension .jpg, .jpeg, .png, .gif, .bmp</div>
+        <form action="/merge" method="post" enctype="multipart/form-data">
+            <input class="inputs" type="file" name="jpgs" multiple accept=".jpg, .jpeg, .png, .gif, .bmp">
+            <input type="submit" value="submit" class="input">
+        </form>
+    </div>
+</body>
+
+</html>
